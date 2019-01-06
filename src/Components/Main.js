@@ -96,9 +96,6 @@ class Main extends Component {
         this.setState({
             currentSearch: event.target.value,
             displayingMovies: this.state.nowPlayingMovies.filter(movie => movie.title.toLowerCase().includes(this.state.currentSearch.toLowerCase()))
-        }, () => { 
-            console.log(this.state.currentSearch);
-            console.log(this.state.displayingMovies);
         })
     }
 
@@ -127,8 +124,9 @@ class Main extends Component {
             .then(response => response.json())
             .then(this.sleep(3000))
             .then(data => this.setState({
-                movies: data.results,
-                displayingMovies: data.results
+                nowPlayingMovies: data.results,
+                displayingMovies: data.results,
+                currentSearch: ''
             }))
     }
 
