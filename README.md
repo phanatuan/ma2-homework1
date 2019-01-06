@@ -36,12 +36,18 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='https://i.imgur.com/57l145B.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+This is the link walkthrough: https://i.imgur.com/57l145B.gif
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+_ I use react-router to create link to each movie, with their id (/movie/:id) - However I cannot render the prop value passed there properly. 
+_ The sorting function not work as expected. 
+_ The search box is still buggy. 
+
+
+
 
 ## License
 
